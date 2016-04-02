@@ -15,7 +15,7 @@ class MenuController
   puts "3 - Search for an entry"
   puts "4 - Import entries from a CSV"
   puts "5 - Delete all entries"
-  puts "5 - Exit"
+  puts "6 - Exit"
   print "Enter your selection: "
   
   selection = gets.to_i
