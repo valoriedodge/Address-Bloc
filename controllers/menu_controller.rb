@@ -97,11 +97,14 @@ class MenuController
  end
  
  def view_entry
+     
      print "Enter entry number: "
      entry_number = gets.to_i
-     if address_book.entries.include?("entry_number")
+     if address_book.entries.length >= entry_number
          puts "You have selected entry number #{entry_number}"
-         else
+         entry = address_book.entries[entry_number - 1]
+         puts entry.to_s
+     else
          puts "Sorry, that is not a valid entry number."
      end
  end
